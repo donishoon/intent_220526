@@ -45,9 +45,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="17sp"
-            android:text="도후니" />
+            android:text="dony" />
 
         <TextView
+            android:id="@+id/txtNickname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />

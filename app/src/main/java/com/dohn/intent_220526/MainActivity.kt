@@ -45,4 +45,25 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+//        다른 화면에서 결과를 받아서 돌아오면 종류와 무관하게 무조건 실행되는 코드 영역(함수)
+
+//        닉네임을 받으러 다녀온게 맞는지? > 대처방안만 코딩
+
+        if (requestCode == REQ_CODE_NICKNAME) {
+
+            if (resultCode == RESULT_OK) {
+
+                val newNickname = data?.getStringExtra("nick")
+                txtNickname.text = newNickname
+
+            }
+
+        }
+
+    }
+
 }

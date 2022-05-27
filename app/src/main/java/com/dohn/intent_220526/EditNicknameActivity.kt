@@ -19,7 +19,7 @@ class EditNicknameActivity : AppCompatActivity() {
 
 //            2. 화면을 이동하는 길에 > 데이터 첨부 : Intent / putExtra
 
-            val resultIntent = Intent() //
+            val resultIntent = Intent() // 데이터 첨부만 할 목적
 
             resultIntent.putExtra("nick", inputNickname)
 
