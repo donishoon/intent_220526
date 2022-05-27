@@ -6,6 +6,10 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+//    1000이라는 숫자가 닉네임을 가지로 가는 거다 ㅡ 구별하기
+    val REQ_CODE_NICKNAME = 1000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         btnEditN.setOnClickListener {
 
             val myIntent = Intent( this, EditNicknameActivity::class.java )
-            startActivityForResult( myIntent, 1000 )
+            startActivityForResult( myIntent, REQ_CODE_NICKNAME )
 
         }
 
