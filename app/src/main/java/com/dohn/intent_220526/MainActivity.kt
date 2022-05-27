@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
             val inputPhone = edtPhone.text.toString()
 
-            val myUri = Uri.parse("tel:01058724832") // 띄어쓰기 끼어있으면 앱이 죽음
+            val myUri = Uri.parse("tel:${inputPhone }") // 띄어쓰기 끼어있으면 앱이 죽음
 
             val myIntent = Intent ( Intent.ACTION_DIAL, myUri )
             startActivity(myIntent)
