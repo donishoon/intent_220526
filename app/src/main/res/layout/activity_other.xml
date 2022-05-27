@@ -16,6 +16,7 @@
         android:textColor="@color/white" />
 
     <Button
+        android:id="@+id/btnMoveBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="메인화면으로 돌아가기" />
