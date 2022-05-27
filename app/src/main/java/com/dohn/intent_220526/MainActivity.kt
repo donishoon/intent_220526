@@ -1,6 +1,7 @@
 package com.dohn.intent_220526
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -41,6 +42,17 @@ class MainActivity : AppCompatActivity() {
 
             val myIntent = Intent( this, EditNicknameActivity::class.java )
             startActivityForResult( myIntent, REQ_CODE_NICKNAME )
+
+        }
+
+        btnDial.setOnClickListener {
+
+            val inputPhone = edtPhone.text.toString()
+
+            val myUri = Uri.parse("tel:01058724832") // 띄어쓰기 끼어있으면 앱이 죽음
+
+            val myIntent = Intent ( Intent.ACTION_DIAL, myUri )
+            startActivity(myIntent)
 
         }
 

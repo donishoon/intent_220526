@@ -63,5 +63,18 @@
     </LinearLayout>
 
 
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호 입력"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnDial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화 걸기(dial" />
+
 
 </LinearLayout>
