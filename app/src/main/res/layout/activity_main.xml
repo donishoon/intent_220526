@@ -98,6 +98,6 @@
         android:id="@+id/btnKakaoStoreLink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="카카오다운링크(VIEW" />
+        android:text="카카오다운링크(VIEW)" />
 
 </LinearLayout>
